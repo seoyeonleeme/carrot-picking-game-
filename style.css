@@ -1,0 +1,126 @@
+body {
+  text-align: center;
+  background-color: black;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: white;
+  border-radius: 20%;
+  padding: 0;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 20px;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+  background: url(img/background.png) center/cover no-repeat;
+}
+
+header {
+  text-align: center;
+  padding: 8px;
+}
+
+.game__button {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  background-color: wheat;
+  border: 4px solid black;
+  transition: transfrom 300ms ease-in;
+}
+
+.game__button:hover {
+  transform: scale(1.1);
+}
+
+.game__timer {
+  display: block;
+  width: 100px;
+  margin: auto;
+  margin-top: 8px;
+  padding: 0 20px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 32px;
+  border: 5px solid black;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
+}
+
+.game__score {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 38px;
+  margin-top: 4px;
+  background-color: darksalmon;
+  color: white;
+  border-radius: 50%;
+  border: 3px solid black;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
+}
+
+.game__field {
+  position: relative;
+  width: 100%; /*부모의 100퍼센트; column으로 해서 남아 있는 공간에서 100% 차지하게 */
+  height: 100%; /*부모의 100퍼센트*/
+  margin-top: 40px; /*당근과 벌레가 울타리 아래 쪽으로 자리잡게*/
+}
+
+.pop-up {
+  border-radius: 20px;
+  width: 400px;
+  height: 124px;
+  margin: auto;
+  background-color: #00000090;
+  color: white;
+  transform: translateY(-150%);
+}
+
+.pop-up--hide {
+  display: none;
+}
+
+.pop-up__refresh {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  background-color: wheat;
+  border: 2px solid black;
+  transition: transfrom 300ms ease-in;
+}
+
+.pop-up__refresh:hover {
+  transform: scale(1.1);
+}
+
+.pop-up__message {
+  display: block;
+  font-size: 38px;
+}
+
+.hide {
+  display: none;
+}
+
+.carrot,
+.bug {
+  transition: transform 100ms ease-in;
+}
+
+.carrot:hover,
+.bug:hover {
+  transform: scale(1.1);
+}
