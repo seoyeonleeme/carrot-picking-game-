@@ -1,1 +1,1 @@
-"# carrot-picking-game-before" 
+배포사이트: https://seoyeonleeme.github.io/carrot-picking-game-/
